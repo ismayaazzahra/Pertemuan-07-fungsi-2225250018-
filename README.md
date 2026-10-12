@@ -23,25 +23,27 @@ Periksa hasil program berdasarkan test case yang diberikan
 
 ## Struktur Fungsi
 
-Fungsi	Parameter	Nilai return	Keterangan
-luas_persegi_panjang(p, l)	p (panjang), l (lebar)	p * l	Menghitung luas persegi panjang.
-luas_segitiga(a, t)	a (alas), t (tinggi)	0.5 * a * t	Menghitung luas segitiga.
-jumlah_n(n)	n (bilangan bulat >= 0)	1 + 2 + ... + n	Akumulasi dengan for; n = 0 menghasilkan 0.
-faktorial(n)	n (bilangan bulat >= 0)	n!	Perkalian dengan for dari 2 sampai n; 0! = 1.
-tampilkan_menu()	tidak ada	tidak ada (None)	Hanya mencetak pilihan menu; sengaja memakai print.
-baca_n()	tidak ada	n atau None	Membaca n; None jika bukan bilangan bulat nonnegatif.
+| Fungsi                       | Parameter                | Nilai return      | Keterangan                                            |
+| ---------------------------- | ------------------------ | ----------------- | ----------------------------------------------------- |
+| `luas_persegi_panjang(p, l)` | p (panjang), l (lebar)   | `p * l`           | Menghitung luas persegi panjang.                      |
+| `luas_segitiga(a, t)`        | a (alas), t (tinggi)     | `0.5 * a * t`     | Menghitung luas segitiga.                             |
+| `jumlah_n(n)`                | n (bilangan bulat >= 0)  | 1 + 2 + ... + n   | Akumulasi dengan for; n = 0 menghasilkan 0.           |
+| `faktorial(n)`               | n (bilangan bulat >= 0)  | n!                | Perkalian dengan for dari 2 sampai n; 0! = 1.         |
+| `tampilkan_menu()`           | tidak ada                | tidak ada (None)  | Hanya mencetak pilihan menu; sengaja memakai print.   |
+| `baca_n()`                   | tidak ada                | n atau None       | Membaca n; None jika bukan bilangan bulat nonnegatif. |
 
 ## Hasil Pengujian
 
-Operasi	Input	Diharapkan	Aktual	Status	Lewat menu
-Luas persegi panjang	p=8, l=5	40	40	Lulus	40.0 *
-Luas segitiga	a=10, t=6	30.0	30.0	Lulus	30.0
-Jumlah 1..n	n=10	55	55	Lulus	55
-Faktorial	n=5	120	120	Lulus	120
-Faktorial	n=0	1	1	Lulus	1
-Faktorial (validasi)	n=-3	Pesan galat	Pesan galat	Lulus	Pesan galat
-Jumlah (validasi)	n=abc	Pesan galat	Pesan galat	Lulus	Pesan galat
-Menu	pilihan 9	Tidak valid	Tidak valid	Lulus	Tidak valid
+| Operasi              | Input     | Diharapkan  | Aktual      | Status | Lewat menu  |
+| -------------------- | --------- | ----------- | ----------- | ------ | ----------- |
+| Luas persegi panjang | p=8, l=5  | 40          | 40          | Lulus  | 40.0 *      |
+| Luas segitiga        | a=10, t=6 | 30.0        | 30.0        | Lulus  | 30.0        |
+| Jumlah 1..n          | n=10      | 55          | 55          | Lulus  | 55          |
+| Faktorial            | n=5       | 120         | 120         | Lulus  | 120         |
+| Faktorial            | n=0       | 1           | 1           | Lulus  | 1           |
+| Faktorial (validasi) | n=-3      | Pesan galat | Pesan galat | Lulus  | Pesan galat |
+| Jumlah (validasi)    | n=abc     | Pesan galat | Pesan galat | Lulus  | Pesan galat |
+| Menu                 | pilihan 9 | Tidak valid | Tidak valid | Lulus  | Tidak valid |
 
 ## Refleksi
 
